@@ -88,5 +88,6 @@ export const items = pgTable("bb_items", {
   userId: text("userId")
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
-  name: text("name").notNull()
+  name: text("name").notNull(),
+  startingPrice: integer("startingPrice").notNull().default(0),
 });
