@@ -6,7 +6,11 @@ const nextConfig = {
         hostname: "pub-427479954805465f9311176a967c6df9.r2.dev",
         protocol: "https",
         port: "",
-
+      },
+      {
+        hostname: "lh3.googleusercontent.com",
+        protocol: "https",
+        port: "",
       },
     ],
   },
