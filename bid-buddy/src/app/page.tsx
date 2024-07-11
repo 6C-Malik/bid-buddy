@@ -1,4 +1,3 @@
-import { auth } from "@/auth";
 import { database } from "@/db/database";
 import { ItemCard } from "./item-card";
 
