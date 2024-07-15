@@ -31,10 +31,14 @@ export default function RootLayout({
         )}
       >
         <SessionProvider>
-
           <AppKnockProviders>
-        <Header />
-            <div className="container mx-auto py-12">{children}</div>
+            <Header />
+            {/* <div className="container mx-auto py-12 bg-[url('/background2.jpg')] bg-opacity-50 h-screen bg-cover bg-center bg-no-repeat"> */}
+            <div className="flex flex-row">
+              <div className="basis-1/12 bg-white"></div>
+              <div className="mx-auto py-12 ">{children}</div>
+              <div className="basis-1/12 bg-white"></div>
+            </div>
           </AppKnockProviders>
         </SessionProvider>
       </body>
